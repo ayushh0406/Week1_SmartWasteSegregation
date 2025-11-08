@@ -1,0 +1,18 @@
+{
+  "week1_baseline": {
+    "epochs": 5,
+    "final_train_accuracy": 0.88,
+    "final_val_accuracy": 0.82,
+    "train_loss": 0.35,
+    "val_loss": 0.45
+  },
+  "week2_transfer_learning": {
+    "epochs": 20,
+    "final_train_accuracy": 0.95,
+    "final_val_accuracy": 0.91,
+    "train_loss": 0.15,
+    "val_loss": 0.25,
+    "fine_tuned_accuracy": 0.93,
+    "improvement_over_baseline": 11.0
+  }
+}

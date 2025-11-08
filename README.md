@@ -84,24 +84,35 @@ Through AI-powered segregation, we can:
 
 ## 📂 **Repository Structure**
 ```
-
 Week1_SmartWasteSegregation/
 │
-├── waste_classifier.ipynb        ← Jupyter Notebook (main code)
-├── README.md                     ← Project details
-├── requirements.txt               ← Python dependencies
+├── waste_classifier.ipynb           ← Original baseline CNN model
+├── transfer_learning_model.ipynb    ← NEW: VGG16 transfer learning (Week 2)
+├── README.md                        ← Project documentation
+├── requirements.txt                 ← Updated Python dependencies
+├── Week2_Project_Update.md          ← Week 2 progress report
+│
+├── scripts/
+│   ├── week2_progress.py           ← Dataset analysis script
+│   └── model_evaluation.py         ← NEW: Evaluation and metrics
 │
 ├── dataset_sample/
 │   ├── Recyclable/
 │   ├── Organic/
 │   └── Non-Recyclable/
 │
-├── output_samples/
-│   ├── accuracy_plot.png
-│   └── sample_prediction.png
+├── outputs/                         ← NEW: Generated results
+│   ├── model_results.json          ← Performance metrics
+│   ├── model_evaluation_dashboard.png ← Visualization
+│   └── output_week2_counts.json    ← Dataset statistics
 │
-└── waste_classifier.h5           ← Saved model (optional)
-
+├── models/                          ← NEW: Saved models directory
+│   ├── waste_classifier_vgg16.h5   ← Transfer learning model
+│   └── waste_classifier_vgg16_finetuned.h5 ← Fine-tuned model
+│
+└── output_samples/                  ← Training plots and samples
+    ├── accuracy_plot.png
+    └── sample_prediction.png
 ```
 
 ---
