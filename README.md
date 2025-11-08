@@ -114,6 +114,30 @@ Week1_SmartWasteSegregation/
 
 ---
 
+## 🗂️ Week 2 Progress — Project Update (≈60% complete)
+
+This repo was updated to reflect Week 2 progress. Key additions and changes made this week:
+
+- `Week2_Project_Update.md` — a short progress report describing the work done this week and the plan to finish the project.
+- `scripts/week2_progress.py` — a small, dependency-free script that inspects `dataset_sample/` and prints image counts per class (quick EDA/check).
+- `README.md` updated with this Week 2 summary and instructions to run the script.
+
+What "~60% complete" covers:
+- Dataset organized and verified in `dataset_sample/`.
+- Baseline model and training notebook present (`waste_classifier.ipynb`) with an initial run.
+- Basic EDA script added and documented.
+- Plan for Transfer Learning, hyperparameter tuning, and deployment (Streamlit) created.
+
+Quick check (PowerShell):
+
+```powershell
+# From repository root
+python .\scripts\week2_progress.py
+```
+
+See `Week2_Project_Update.md` for the detailed weekly log, files added, sample outputs, and next steps to reach final submission.
+
+
 ## 🧠 **References**
 - Kaggle Dataset: [Waste Classification Dataset](https://www.kaggle.com/datasets/phenomsg/waste-classification)  
 - TensorFlow Documentation: [https://www.tensorflow.org](https://www.tensorflow.org)  
