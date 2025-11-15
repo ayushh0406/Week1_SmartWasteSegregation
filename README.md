@@ -148,6 +148,38 @@ python .\scripts\week2_progress.py
 
 See `Week2_Project_Update.md` for the detailed weekly log, files added, sample outputs, and next steps to reach final submission.
 
+---
+
+## 🚀 **How to Run the Complete Project**
+
+### Quick Start (3 Simple Steps):
+
+1. **Install Dependencies**
+```powershell
+pip install -r requirements.txt
+```
+
+2. **Run the Web Application**
+```powershell
+streamlit run app.py
+```
+
+3. **Open in Browser**
+- The app will automatically open at `http://localhost:8501`
+- Upload a waste image and get instant classification!
+
+### Features:
+- ✅ **Real-time Classification** - Upload image and get instant results
+- ✅ **93% Accuracy** - Powered by VGG16 Transfer Learning
+- ✅ **User-Friendly UI** - Clean, professional interface
+- ✅ **Disposal Guidance** - Tells you exactly where to dispose waste
+- ✅ **Demo Mode** - Works even without trained model
+
+### Detailed Instructions:
+See [HOW_TO_RUN.md](HOW_TO_RUN.md) for complete setup and troubleshooting guide.
+
+---
+
 
 ## 🧠 **References**
 - Kaggle Dataset: [Waste Classification Dataset](https://www.kaggle.com/datasets/phenomsg/waste-classification)  

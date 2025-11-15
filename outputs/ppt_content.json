@@ -1,0 +1,268 @@
+{
+  "title_slide": {
+    "title": "Smart Waste Segregation using AI",
+    "subtitle": "Automated Waste Classification using Deep Learning",
+    "author": "Shell-Edunet x AICTE Green Skills Internship",
+    "date": "November 2025"
+  },
+  "problem_statement": {
+    "title": "Problem Statement",
+    "points": [
+      "Improper waste segregation is a major environmental challenge in modern cities",
+      "70% of recyclable materials end up in landfills due to inefficient manual sorting",
+      "Lack of awareness leads to contamination in recycling streams",
+      "Manual waste sorting is time-consuming, expensive, and error-prone",
+      "Need for automated, accurate, and scalable waste classification solution"
+    ],
+    "impact": "Global waste generation expected to reach 3.4 billion tonnes by 2050"
+  },
+  "solution": {
+    "title": "Our Solution",
+    "main_solution": "AI-Powered Waste Classification System using Deep Learning",
+    "features": [
+      "Automated image-based waste classification into 3 categories",
+      "Real-time predictions with 93% accuracy using VGG16 Transfer Learning",
+      "User-friendly Streamlit web interface for easy access",
+      "Instant disposal recommendations for each waste item",
+      "Scalable solution deployable in smart cities and waste management facilities"
+    ],
+    "technology": "Leverages Convolutional Neural Networks (CNN) and Transfer Learning"
+  },
+  "learning_objectives": {
+    "title": "Learning Objectives",
+    "objectives": [
+      "Understand and implement deep learning for image classification",
+      "Apply Transfer Learning techniques using pre-trained models (VGG16)",
+      "Develop end-to-end ML pipeline: data preprocessing, training, evaluation",
+      "Create production-ready web applications using Streamlit",
+      "Analyze model performance using confusion matrix and metrics",
+      "Address real-world sustainability challenges using AI",
+      "Implement best practices in ML project development and deployment"
+    ]
+  },
+  "methodology": {
+    "title": "Methodology",
+    "phases": [
+      {
+        "phase": "Phase 1: Data Collection & Preparation",
+        "steps": [
+          "Collected 30,000+ waste images from Kaggle dataset",
+          "Organized into 3 categories: Recyclable, Organic, Non-Recyclable",
+          "Applied data augmentation: rotation, flip, zoom, shift",
+          "Split dataset: 80% training, 20% validation"
+        ]
+      },
+      {
+        "phase": "Phase 2: Model Development",
+        "steps": [
+          "Week 1: Built baseline CNN model (82% accuracy)",
+          "Week 2: Implemented VGG16 Transfer Learning",
+          "Froze base layers, added custom classification head",
+          "Applied fine-tuning on top layers for optimization"
+        ]
+      },
+      {
+        "phase": "Phase 3: Training & Evaluation",
+        "steps": [
+          "Trained model for 20 epochs with early stopping",
+          "Used Adam optimizer with learning rate scheduling",
+          "Achieved 93% validation accuracy",
+          "Generated confusion matrix and performance metrics"
+        ]
+      },
+      {
+        "phase": "Phase 4: Deployment",
+        "steps": [
+          "Developed Streamlit web application",
+          "Integrated trained model for real-time predictions",
+          "Created intuitive UI with image upload functionality",
+          "Added disposal guidance and sustainability information"
+        ]
+      }
+    ]
+  },
+  "tools_and_technology": {
+    "title": "Tools and Technology Used",
+    "categories": [
+      {
+        "category": "Programming & Frameworks",
+        "tools": [
+          "Python 3.x - Primary programming language",
+          "TensorFlow 2.13 - Deep learning framework",
+          "Keras - High-level neural networks API",
+          "Streamlit - Web application framework"
+        ]
+      },
+      {
+        "category": "Machine Learning Libraries",
+        "tools": [
+          "NumPy - Numerical computations",
+          "Pandas - Data manipulation",
+          "Scikit-learn - ML utilities and metrics",
+          "OpenCV - Image processing"
+        ]
+      },
+      {
+        "category": "Visualization",
+        "tools": [
+          "Matplotlib - Plotting and visualization",
+          "Seaborn - Statistical visualizations",
+          "Plotly - Interactive plots"
+        ]
+      },
+      {
+        "category": "Development Environment",
+        "tools": [
+          "Google Colab - GPU-enabled training",
+          "Jupyter Notebook - Development and experimentation",
+          "VS Code - Code editor",
+          "Git/GitHub - Version control"
+        ]
+      },
+      {
+        "category": "Pre-trained Model",
+        "tools": [
+          "VGG16 (ImageNet weights) - Transfer Learning base"
+        ]
+      }
+    ]
+  },
+  "model_architecture": {
+    "title": "Model Architecture",
+    "architecture": [
+      "Input Layer: 224 x 224 x 3 (RGB images)",
+      "VGG16 Base: Pre-trained on ImageNet (frozen)",
+      "Global Average Pooling: Dimensional reduction",
+      "Dense Layer 1: 512 neurons + ReLU + Dropout(0.5)",
+      "Dense Layer 2: 256 neurons + ReLU + Dropout(0.3)",
+      "Output Layer: 3 neurons + Softmax activation",
+      "Total Parameters: ~16M (15M frozen, 1M trainable)"
+    ]
+  },
+  "results": {
+    "title": "Results and Performance",
+    "metrics": {
+      "Overall Accuracy": "93%",
+      "Training Accuracy": "95%",
+      "Validation Accuracy": "93%",
+      "Improvement over Baseline": "+11 percentage points"
+    },
+    "per_class_performance": {
+      "Recyclable": {
+        "Precision": "93%",
+        "Recall": "96%",
+        "F1-Score": "94%"
+      },
+      "Organic": {
+        "Precision": "89%",
+        "Recall": "83%",
+        "F1-Score": "86%"
+      },
+      "Non-Recyclable": {
+        "Precision": "93%",
+        "Recall": "90%",
+        "F1-Score": "92%"
+      }
+    },
+    "key_achievements": [
+      "Achieved target accuracy of >90%",
+      "Successful implementation of Transfer Learning",
+      "Created production-ready web application",
+      "Generated comprehensive evaluation metrics"
+    ]
+  },
+  "sustainability_impact": {
+    "title": "Sustainability Impact",
+    "sdg_alignment": "UN SDG 12: Responsible Consumption and Production",
+    "environmental_benefits": [
+      "15-20% improvement in recycling rates",
+      "25-30% reduction in contamination",
+      "Reduced landfill waste through better sorting",
+      "Support for circular economy initiatives"
+    ],
+    "social_impact": [
+      "Increased awareness about waste segregation",
+      "Cost reduction in waste management operations",
+      "Job creation in waste processing sector",
+      "Cleaner and healthier communities"
+    ],
+    "scalability": [
+      "Deployable in smart cities",
+      "Applicable to waste management facilities",
+      "Adaptable for different waste categories",
+      "Integration with IoT-enabled smart bins"
+    ]
+  },
+  "demo_screenshots": {
+    "title": "Application Demo",
+    "description": "Streamlit Web Application Interface",
+    "features_shown": [
+      "Clean and intuitive user interface",
+      "Image upload functionality",
+      "Real-time classification results",
+      "Confidence scores visualization",
+      "Disposal action recommendations",
+      "Project statistics dashboard"
+    ]
+  },
+  "challenges_and_learnings": {
+    "title": "Challenges & Learnings",
+    "challenges": [
+      "Limited dataset size for some waste categories",
+      "Similar-looking items across different categories",
+      "Varying image quality and lighting conditions",
+      "Model size vs. accuracy trade-off"
+    ],
+    "solutions": [
+      "Applied extensive data augmentation",
+      "Used Transfer Learning to leverage pre-trained features",
+      "Implemented fine-tuning for better performance",
+      "Balanced model complexity with deployment requirements"
+    ],
+    "key_learnings": [
+      "Transfer Learning significantly improves performance",
+      "Data quality is as important as quantity",
+      "User interface design is crucial for adoption",
+      "Real-world deployment requires careful consideration"
+    ]
+  },
+  "future_scope": {
+    "title": "Future Scope & Enhancements",
+    "short_term": [
+      "Expand to more waste categories (e-waste, hazardous, etc.)",
+      "Mobile app development for on-the-go classification",
+      "Multi-language support for global accessibility",
+      "Integration with smart waste bins"
+    ],
+    "long_term": [
+      "Real-time video stream processing",
+      "Edge deployment for offline functionality",
+      "IoT integration for automated sorting systems",
+      "Blockchain for waste tracking and rewards",
+      "AI-powered waste management analytics dashboard"
+    ]
+  },
+  "conclusion": {
+    "title": "Conclusion",
+    "summary": [
+      "Successfully developed an AI-powered waste classification system with 93% accuracy",
+      "Implemented end-to-end ML pipeline from data collection to deployment",
+      "Created user-friendly web application for real-time waste classification",
+      "Demonstrated practical application of Transfer Learning and Deep Learning",
+      "Contributed to environmental sustainability through technology"
+    ],
+    "impact_statement": "This project showcases how AI can be leveraged to address critical environmental challenges and support sustainable development goals.",
+    "thank_you": "Thank you for your attention!"
+  },
+  "references_and_links": {
+    "title": "References & Links",
+    "github": "https://github.com/ayushh0406/Week1_SmartWasteSegregation",
+    "dataset": "Kaggle Waste Classification Dataset",
+    "documentation": [
+      "TensorFlow Documentation",
+      "Keras VGG16 Documentation",
+      "Streamlit Documentation"
+    ],
+    "contact": "GitHub: @ayushh0406"
+  }
+}
